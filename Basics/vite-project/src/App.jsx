@@ -1,13 +1,21 @@
-import ProductList from "./components/ProductList";
-import UserList from "./components/UserList";
+import Counter from "./components/Counter";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <>
-      <h2>Users</h2>
-      <UserList />
-      <h2>Products</h2>
-      <ProductList />
+      <Counter />
+      <br></br>
+      <br></br>
+      <TodoList />
+      <br></br>
+      <br></br>
+      <Profile />
+      <br></br>
+      <br></br>
+      <ShoppingList />
     </>
   );
 }
