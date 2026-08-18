@@ -1,9 +1,9 @@
-import Copy from "./components/Copy";
+import Timer from "./components/Timer";
 
 function App() {
   return (
     <>
-      <Copy />
+      <Timer />
     </>
   );
 }
