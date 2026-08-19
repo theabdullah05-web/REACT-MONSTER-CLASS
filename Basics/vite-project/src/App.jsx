@@ -1,9 +1,9 @@
-import Timer from "./components/Timer";
+import CustomHook from "./components/CustomHook";
 
 function App() {
   return (
     <>
-      <Timer />
+      <CustomHook />
     </>
   );
 }
