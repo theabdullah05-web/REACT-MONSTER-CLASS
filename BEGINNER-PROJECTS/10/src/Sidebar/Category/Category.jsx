@@ -1,6 +1,14 @@
+import Input from "../../components/Input";
 import "./Category.css";
 const Category = () => {
-  return <div>Category</div>;
+  return (
+    <div>
+      <h2 className="sidebar-title">Category</h2>
+      <div>
+        <Input />
+      </div>
+    </div>
+  );
 };
 
 export default Category;
