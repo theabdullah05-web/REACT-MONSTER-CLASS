@@ -5,7 +5,7 @@ import Recommended from "./Recommended/Recommended";
 import SideBar from "./Sidebar/Sidebar";
 import "./index.css";
 //Database
-import products from "./db/data.js";
+import products from "./db/data";
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   //--------Input Filter---------
