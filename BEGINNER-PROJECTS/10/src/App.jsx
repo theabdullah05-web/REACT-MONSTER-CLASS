@@ -4,6 +4,8 @@ import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import SideBar from "./Sidebar/Sidebar";
 import "./index.css";
+//Database
+import products from "./db/data";
 const App = () => {
   const [selectedCategory, useSelectedCategory] = useState(null);
   //Input Filter
