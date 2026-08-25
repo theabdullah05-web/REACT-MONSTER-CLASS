@@ -7,7 +7,7 @@ const Category = ({ handleChange }) => {
       <div>
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test" />
-          <span className="check-mark">all</span>
+          <span className="check-mark"></span>all
         </label>
       </div>
     </div>
