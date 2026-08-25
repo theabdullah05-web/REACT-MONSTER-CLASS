@@ -26,7 +26,7 @@ const App = () => {
   const handleClick = (e) => {
     setSelectedCategory(e.target.value);
   };
-  const filteredData = (products, category, query) => {
+  const filteredData = (products, selected, query) => {
     let filteredProducts = products;
     //filtering Input Items
     if (query) {
