@@ -24,6 +24,13 @@ const App = () => {
   const handleClick = (e) => {
     setSelectedCategory(e.target.value);
   };
+  const filteredData = () => {
+    let filteredProducts = products;
+    //filtering Input Items
+    if (query) {
+      filteredData;
+    }
+  };
   return (
     <>
       <SideBar />
