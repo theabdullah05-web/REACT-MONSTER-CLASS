@@ -10,6 +10,9 @@ const App = () => {
   const [selectedCategory, useSelectedCategory] = useState(null);
   //Input Filter
   const [query, setQuery] = useState("");
+  const filteredItems = products.filter((product) =>
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1),
+  );
   const handleInputChange = (e) => {
     setQuery(e.target.value);
   };
