@@ -28,7 +28,7 @@ const App = () => {
     let filteredProducts = products;
     //filtering Input Items
     if (query) {
-      filteredData;
+      filteredProducts = filteredItems;
     }
   };
   return (
