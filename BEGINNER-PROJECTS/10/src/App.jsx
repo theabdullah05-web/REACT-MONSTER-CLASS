@@ -30,13 +30,15 @@ const App = () => {
     if (query) {
       filteredProducts = filteredItems;
     }
-    if(selected){
-      filteredProducts = filteredProducts.filter({
-        category,
-        color,
-        company,
-        newPrice,
-      ,title});
+    if (selected) {
+      filteredProducts = filteredProducts.filter(
+        ({ category, color, company, newPrice, title }) =>
+          category === selected ||
+          color === selected ||
+          company === selected ||
+          newPrice === selected ||
+          title === selected,
+      );
     }
   };
   return (
