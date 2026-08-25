@@ -26,7 +26,7 @@ const App = () => {
   const handleClick = (e) => {
     setSelectedCategory(e.target.value);
   };
-  const filteredData = () => {
+  const filteredData = (products, category, query) => {
     let filteredProducts = products;
     //filtering Input Items
     if (query) {
@@ -56,6 +56,7 @@ const App = () => {
       ),
     );
   };
+  filteredData(products, selectedCategory, query);
   return (
     <>
       <SideBar />
