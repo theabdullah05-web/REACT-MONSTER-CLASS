@@ -43,7 +43,14 @@ const App = () => {
       );
     }
     return filteredProducts.map(({ img, title, star, reviews, newPrice }) => (
-      <Card key={uuidv4()} />
+      <Card
+        key={uuidv4()}
+        img={img}
+        title={title}
+        star={star}
+        reviews={reviews}
+        newPrice={newPrice}
+      />
     ));
   };
   return (
