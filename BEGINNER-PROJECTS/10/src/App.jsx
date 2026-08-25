@@ -17,7 +17,6 @@ const App = () => {
     product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1),
   );
   //--------Radio Filter---------
-  //Check
 
   return (
     <>
