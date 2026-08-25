@@ -7,7 +7,7 @@ import "./index.css";
 //Database
 import products from "./db/data";
 const App = () => {
-  const [selectedCategory, useSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   //--------Input Filter---------
   const [query, setQuery] = useState("");
   const handleInputChange = (e) => {
@@ -17,7 +17,9 @@ const App = () => {
     product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1),
   );
   //--------Radio Filter---------
-
+  const handleChange = (e) => {
+    setSelectedCategory(e.target.value);
+  };
   return (
     <>
       <SideBar />
