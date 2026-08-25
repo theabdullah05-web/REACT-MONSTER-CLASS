@@ -15,6 +15,12 @@ const Category = ({ handleChange }) => {
           title="Sneackers"
           name="test"
         />
+        <Input
+          handleChange={handleChange}
+          value="sneakers"
+          title="Sneackers"
+          name="test"
+        />
       </div>
     </div>
   );
