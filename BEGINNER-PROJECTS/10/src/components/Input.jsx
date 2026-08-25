@@ -1,4 +1,4 @@
-export default function Input() {
+export default function Input({ handleChange, value }) {
   return (
     <label className="sidebar-label-container">
       <input type="radio" name="test2" />
