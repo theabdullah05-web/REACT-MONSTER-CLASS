@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import Nav from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
@@ -6,6 +7,7 @@ import SideBar from "./Sidebar/Sidebar";
 import "./index.css";
 //Database
 import products from "./db/data";
+import Card from "./components/Card";
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   //--------Input Filter---------
@@ -40,6 +42,9 @@ const App = () => {
           title === selected,
       );
     }
+    return filteredProducts.map(({ img, title, star, reviews, newPrice }) => (
+      <Card key={uuidv4()} />
+    ));
   };
   return (
     <>
