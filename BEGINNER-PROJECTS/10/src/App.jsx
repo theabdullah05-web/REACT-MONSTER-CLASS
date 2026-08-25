@@ -20,6 +20,10 @@ const App = () => {
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
   };
+  //--------Buttons Filter---------
+  const handleClick = (e) => {
+    setSelectedCategory(e.target.value);
+  };
   return (
     <>
       <SideBar />
