@@ -9,6 +9,12 @@ const Category = ({ handleChange }) => {
           <input onChange={handleChange} type="radio" value="" name="test" />
           <span className="check-mark"></span>All
         </label>
+        <Input
+          handleChange={handleChange}
+          value="sneakers"
+          title={Snickers}
+          name="test"
+        />
       </div>
     </div>
   );
