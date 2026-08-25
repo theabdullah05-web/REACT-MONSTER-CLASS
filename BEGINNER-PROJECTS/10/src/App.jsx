@@ -56,7 +56,7 @@ const App = () => {
       ),
     );
   };
-  filteredData(products, selectedCategory, query);
+  const result = filteredData(products, selectedCategory, query);
   return (
     <>
       <SideBar />
