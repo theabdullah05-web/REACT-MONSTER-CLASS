@@ -12,7 +12,7 @@ const Category = ({ handleChange }) => {
         <Input
           handleChange={handleChange}
           value="sneakers"
-          title={Snickers}
+          title="Sneackers"
           name="test"
         />
       </div>
