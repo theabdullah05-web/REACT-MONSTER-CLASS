@@ -5,7 +5,10 @@ const Price = ({ handleChange }) => {
   return (
     <div className="ml">
       <h2 className="sidebar-title price-title">Price</h2>
-      <Input />
+      <label className="sidebar-label-container">
+        <input onChange={handleChange} type="radio" value="" name="test" />
+        <span className="check-mark"></span>All
+      </label>
     </div>
   );
 };
