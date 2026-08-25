@@ -1,3 +1,11 @@
+$repo = git rev-parse --show-toplevel
+
+if (-not $repo) {
+    exit 1
+}
+
+Set-Location $repo
+
 git add .
 
 if (git diff --cached --quiet) {
@@ -6,4 +14,4 @@ if (git diff --cached --quiet) {
 
 git commit -m "Auto commit $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 
-git push
+git push origin main
