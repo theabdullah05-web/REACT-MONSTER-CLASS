@@ -1,6 +1,6 @@
 import "./Colors.css";
 import Input from "../../components/Input";
-const Colors = () => {
+const Colors = ({ handleChange }) => {
   return (
     <div>
       <h2 className="sidebar-title color-title">Colors</h2>
@@ -8,7 +8,13 @@ const Colors = () => {
         <input onChange={handleChange} type="radio" value="" name="test2" />
         <span className="check-mark"></span>All
       </label>
-      <Input />
+      <Input
+        handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color="black"
+      />
     </div>
   );
 };
