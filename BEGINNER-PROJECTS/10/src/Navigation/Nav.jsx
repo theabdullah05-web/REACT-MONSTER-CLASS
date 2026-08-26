@@ -9,6 +9,8 @@ const Nav = ({ query, handleInputChange }) => {
           type="text"
           className="search-input"
           placeholder="Enter your search shoes"
+          value={query}
+          onChange={handleInputChange}
         />
       </div>
       <div className="profile-container">
