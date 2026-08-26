@@ -1,5 +1,5 @@
 import "./Recommended.css";
-
+import Buttons from "../components/Buttons";
 const Recommended = () => {
   return (
     <div>
