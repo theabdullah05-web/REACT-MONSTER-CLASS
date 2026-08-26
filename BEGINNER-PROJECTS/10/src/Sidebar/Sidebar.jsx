@@ -10,6 +10,7 @@ const Sidebar = ({ handleChange }) => {
         style={{
           maxHeight: "100vh",
           overflowY: "auto",
+          overflowX: "hidden",
         }}
       >
         <div className="logo-container">
