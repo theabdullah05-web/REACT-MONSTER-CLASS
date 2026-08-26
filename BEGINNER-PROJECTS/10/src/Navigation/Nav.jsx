@@ -1,7 +1,7 @@
 import { FiHeart } from "react-icons/fi";
 import "./Nav.css";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
-const Nav = () => {
+const Nav = ({ query, handleInputChange }) => {
   return (
     <nav>
       <div className="nav-container">
