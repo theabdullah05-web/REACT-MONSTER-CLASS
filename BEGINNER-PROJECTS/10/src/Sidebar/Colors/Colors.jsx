@@ -36,13 +36,7 @@ const Colors = ({ handleChange }) => {
         name="test1"
         color="green"
       />
-      <Input
-        handleChange={handleChange}
-        value="white"
-        title="White"
-        name="test1"
-        color="white"
-      />
+      <label htmlFor="" className="sidebar-label-container"></label>
     </div>
   );
 };
