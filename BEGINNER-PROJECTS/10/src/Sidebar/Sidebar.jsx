@@ -5,7 +5,13 @@ import Colors from "./Colors/Colors";
 const Sidebar = ({ handleChange }) => {
   return (
     <>
-      <section className="sidebar">
+      <section
+        className="sidebar"
+        style={{
+          maxHeight: "400px",
+          overflowY: "auto",
+        }}
+      >
         <div className="logo-container">
           <h1>
             <i class="fa-solid fa-cart-shopping"></i>
