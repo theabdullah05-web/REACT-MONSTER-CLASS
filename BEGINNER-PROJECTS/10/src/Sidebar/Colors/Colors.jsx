@@ -15,6 +15,34 @@ const Colors = ({ handleChange }) => {
         name="test1"
         color="black"
       />
+      <Input
+        handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color="black"
+      />
+      <Input
+        handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color="black"
+      />
+      <Input
+        handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color="black"
+      />
+      <Input
+        handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color="black"
+      />
     </div>
   );
 };
