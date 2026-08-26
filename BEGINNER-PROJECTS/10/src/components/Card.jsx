@@ -5,7 +5,7 @@ const Card = ({ img, title, star, reviews, newPrice, prevPrice }) => {
     <section className="card">
       <img className="card-img" src={img} alt="shoe" />
       <div className="card-details">
-        <h3 className="card-title">Shoe</h3>
+        <h3 className="card-title">{title}</h3>
         <section className="card-reviews">
           <AiFillStar className="rating-star" />
           <AiFillStar className="rating-star" />
