@@ -3,11 +3,7 @@ import { BsFillBagHeartFill } from "react-icons/bs";
 const Card = ({ img, title, star, reviews, newPrice, prevPrice }) => {
   return (
     <section className="card">
-      <img
-        className="card-img"
-        src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-        alt="shoe"
-      />
+      <img className="card-img" src={img} alt="shoe" />
       <div className="card-details">
         <h3 className="card-title">Shoe</h3>
         <section className="card-reviews">
