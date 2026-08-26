@@ -8,7 +8,7 @@ const Sidebar = ({ handleChange }) => {
       <section
         className="sidebar"
         style={{
-          maxHeight: "400px",
+          maxHeight: "100vh",
           overflowY: "auto",
         }}
       >
