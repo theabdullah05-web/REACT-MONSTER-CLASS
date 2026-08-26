@@ -44,7 +44,7 @@ const Colors = ({ handleChange }) => {
           name="test1"
         />
         <span
-          className="ceckmark"
+          className="check-mark"
           style={{ backgroundColor: "white", border: "1px solid black" }}
         ></span>
       </label>
