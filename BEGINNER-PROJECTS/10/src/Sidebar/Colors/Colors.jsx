@@ -43,7 +43,9 @@ const Colors = ({ handleChange }) => {
           value="white"
           name="test1"
         />
-        <span style={{ backgroundColor: "white" }}></span>
+        <span
+          style={{ backgroundColor: "white", border: "1px solid black" }}
+        ></span>
       </label>
     </div>
   );
