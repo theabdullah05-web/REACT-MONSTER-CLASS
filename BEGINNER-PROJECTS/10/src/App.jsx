@@ -62,7 +62,7 @@ const App = () => {
       <SideBar handleChange={handleChange} />
       <Nav query={quer} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
-      <Products />
+      <Products result={result} />
     </>
   );
 };
