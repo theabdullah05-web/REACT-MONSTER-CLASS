@@ -1,6 +1,6 @@
 import { AiFillStar } from "react-icons/ai";
 import { BsFillBagHeartFill } from "react-icons/bs";
-const Card = () => {
+const Card = ({ img, title, star, reviews, newPrice, prevPrice }) => {
   return (
     <section className="card">
       <img
