@@ -11,7 +11,7 @@ const Card = ({ img, title, star, reviews, newPrice, prevPrice }) => {
           <AiFillStar className="rating-star" />
           <AiFillStar className="rating-star" />
           <AiFillStar className="rating-star" />
-          <span className="total-reviews">{star}</span>
+          <span className="total-reviews">{reviews}</span>
         </section>
         <section className="card-price">
           <div className="price">
