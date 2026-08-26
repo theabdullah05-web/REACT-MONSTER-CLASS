@@ -6,7 +6,7 @@ const Colors = ({ handleChange }) => {
       <h2 className="sidebar-title color-title">Colors</h2>
       <label className="sidebar-label-container">
         <input onChange={handleChange} type="radio" value="" name="test2" />
-        <span className="check-mark"></span>All
+        <span className="check-mark all"></span>All
       </label>
       <Input
         handleChange={handleChange}
