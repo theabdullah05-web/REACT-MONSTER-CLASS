@@ -36,7 +36,15 @@ const Colors = ({ handleChange }) => {
         name="test1"
         color="green"
       />
-      <label htmlFor="" className="sidebar-label-container"></label>
+      <label className="sidebar-label-container">
+        <input
+          type="radio"
+          onChange={handleChange}
+          value="white"
+          name="test1"
+        />
+        <span style={{ backgroundColor: "white" }}></span>
+      </label>
     </div>
   );
 };
