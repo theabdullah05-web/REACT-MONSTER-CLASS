@@ -23,5 +23,11 @@ export default function App() {
   //     <Button label="Disabled" disabled={true} onClick={nothing} />
   //   </>
   // );
-  return <UserInfo id={Math.random()} name="John" email="john@abc" />;
+  return (
+    <UserInfo
+      id={Math.floor(Math.random() * 100)}
+      name="John"
+      email="john@abc"
+    />
+  );
 }
