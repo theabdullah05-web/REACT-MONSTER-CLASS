@@ -1,10 +1,14 @@
 interface buttonTypes {
   label: string;
-  onclick: () => void;
+  onClick: () => void;
   disabled: boolean;
 }
-const Button = ({ label, onClick, disabled }) => {
-  return <div>Button</div>;
+const Button = ({ label, onClick, disabled }: buttonTypes) => {
+  return (
+    <button onClick={onClick} disabled={disabled}>
+      {label}
+    </button>
+  );
 };
 
 export default Button;
