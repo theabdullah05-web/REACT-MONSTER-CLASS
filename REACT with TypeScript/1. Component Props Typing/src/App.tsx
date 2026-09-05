@@ -25,7 +25,7 @@ export default function App() {
   // );
   return (
     <UserInfo
-      id={Math.floor(Math.random() * 100)}
+      id={Math.floor(Math.random() * 1000000)}
       name="John"
       email="john@abc"
     />
