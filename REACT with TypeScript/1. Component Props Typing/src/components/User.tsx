@@ -1,5 +1,10 @@
-const User = () => {
-  return <div>User</div>;
+const User = ({ name, age, isStudent }) => {
+  return (
+    <div>
+      <h1>{name}</h1>
+      <h2>{age}</h2>
+    </div>
+  );
 };
 
 export default User;
