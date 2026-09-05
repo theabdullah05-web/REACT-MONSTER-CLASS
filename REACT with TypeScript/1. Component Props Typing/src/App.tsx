@@ -1,6 +1,6 @@
 // import User from "./components/User";
 
-import Button from "./components/Button";
+// import Button from "./components/Button";
 
 export default function App() {
   // return <User name="Abdullah" age={21} isStudent={true} />;
