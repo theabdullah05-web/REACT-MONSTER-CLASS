@@ -3,3 +3,4 @@ interface Info {
   name: string;
   email: string;
 }
+export type { Info };
