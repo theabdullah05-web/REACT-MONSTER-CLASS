@@ -3,4 +3,7 @@ interface Info {
   name: string;
   email: string;
 }
-export type { Info };
+interface AdminInfo extends Info {
+  role: string;
+}
+export type { Info, AdminInfo };
