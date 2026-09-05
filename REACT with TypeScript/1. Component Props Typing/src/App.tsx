@@ -9,16 +9,17 @@ export default function App() {
   //     <p>Abdullah is here</p>
   //   </User>
   // );
-  let onclick = () => {
-    alert("Button was clicked");
-  };
-  let nothing = () => {};
-  return (
-    <>
-      <Button label="Click Me" disabled={false} onClick={onclick} />
-      <br></br>
-      <br></br>
-      <Button label="Disabled" disabled={true} onClick={nothing} />
-    </>
-  );
+  // let onclick = () => {
+  //   alert("Button was clicked");
+  // };
+  // let nothing = () => {};
+  // return (
+  //   <>
+  //     <Button label="Click Me" disabled={false} onClick={onclick} />
+  //     <br></br>
+  //     <br></br>
+  //     <Button label="Disabled" disabled={true} onClick={nothing} />
+  //   </>
+  // );
+  return <div></div>;
 }
