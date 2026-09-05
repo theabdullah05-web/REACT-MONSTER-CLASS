@@ -16,6 +16,7 @@ export default function App() {
   return (
     <>
       <Button label="Click Me" disabled={false} onClick={onclick} />
+      <br></br>
       <Button label="Disabled" disabled={true} onClick={nothing} />
     </>
   );
