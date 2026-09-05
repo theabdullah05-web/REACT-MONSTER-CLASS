@@ -25,7 +25,7 @@ interface childrenShape {
 }
 
 export const User = ({ children }: childrenShape) => {
-  return { children };
+  return <div>{children}</div>;
 };
 
 export default User;
