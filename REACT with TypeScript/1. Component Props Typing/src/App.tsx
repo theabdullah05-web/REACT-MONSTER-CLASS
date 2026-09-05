@@ -1,5 +1,7 @@
 // import User from "./components/User";
 
+import UserInfo from "./components/UserInfo";
+
 // import Button from "./components/Button";
 
 export default function App() {
@@ -21,5 +23,5 @@ export default function App() {
   //     <Button label="Disabled" disabled={true} onClick={nothing} />
   //   </>
   // );
-  return <div></div>;
+  return <UserInfo />;
 }
