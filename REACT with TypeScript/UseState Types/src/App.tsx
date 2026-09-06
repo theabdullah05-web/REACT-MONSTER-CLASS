@@ -1,5 +1,10 @@
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+
+import { useState } from "react";
+import UserProfile from "./components/userProfile";
 
 export const App = () => {
-  return <Counter />;
+  const [state, setState] = useState<object>({});
+  // return <Counter />;
+  return <UserProfile information={state} func={setState} />;
 };
