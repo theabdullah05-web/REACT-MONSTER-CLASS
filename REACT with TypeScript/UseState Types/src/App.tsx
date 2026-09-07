@@ -7,7 +7,9 @@ export const App = () => {
     <>
       <Counter />
       <br></br>
+      <br></br>
       <UserProfile />
+      <br></br>
       <br></br>
       <TodoList />
     </>
