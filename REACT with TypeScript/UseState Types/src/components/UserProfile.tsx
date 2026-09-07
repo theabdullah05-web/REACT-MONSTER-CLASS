@@ -44,9 +44,11 @@ const UserProfile = () => {
       />
       <br></br>
       <h3>Profile Info</h3>
-      {profile.name !== "" && <h4>Name: {profile.name}</h4>}
-      {profile.age !== "" && <h4>Age: {profile.age}</h4>}
-      {profile.email !== "" && <h4>Email: {profile.email}</h4>}
+      <form>
+        {profile.name !== "" && <h4>Name: {profile.name}</h4>}
+        {profile.age !== "" && <h4>Age: {profile.age}</h4>}
+        {profile.email !== "" && <h4>Email: {profile.email}</h4>}
+      </form>
     </>
   );
 };
