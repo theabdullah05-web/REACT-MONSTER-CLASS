@@ -1,9 +1,10 @@
+import Contact from "./components/Contact";
 import FocusInput from "./FocusInput";
 
 const App = () => {
   return (
     <>
-      <FocusInput />
+      <Contact />
     </>
   );
 };
