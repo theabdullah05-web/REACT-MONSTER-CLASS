@@ -22,7 +22,7 @@ const UserProfile = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
+    console.log(e.target.entries);
     // setProfile(preVal=>({...preVal,}))
   };
   return (
