@@ -1,9 +1,5 @@
-const userProfile = ({information, func}:{information:object,func:()=>void}) => {
-  return (
-    <div>
-      {}
-    </div>
-  )
-}
+const userProfile = () => {
+  return <div>userProfile</div>;
+};
 
-export default userProfile
+export default userProfile;
