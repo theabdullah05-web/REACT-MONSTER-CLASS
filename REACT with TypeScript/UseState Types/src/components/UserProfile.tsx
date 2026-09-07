@@ -22,6 +22,8 @@ const UserProfile = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(e.target.value);
+    // setProfile(preVal=>({...preVal,}))
   };
   return (
     <>
