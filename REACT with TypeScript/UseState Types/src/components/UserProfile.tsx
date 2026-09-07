@@ -11,13 +11,37 @@ const UserProfile = () => {
     age: "",
     email: "",
   });
+  const changeName = (name: string) => {
+    setProfile((preVal) => ({ ...preVal, name }));
+  };
+  const changeAge = (age: string) => {
+    setProfile((preVal) => ({ ...preVal, age }));
+  };
+  const changeEmail = (email: string) => {
+    setProfile((preVal) => ({ ...preVal, email }));
+  };
   return (
     <>
-      <input type="text" value={profile.name} placeholder="name" />
+      <input
+        type="text"
+        value={profile.name}
+        placeholder="name"
+        onChange={(e) => changeName(e.target.value)}
+      />
       <br></br>
-      <input type="text" value={profile.age} placeholder="age" />
+      <input
+        type="text"
+        value={profile.age}
+        placeholder="age"
+        onChange={(e) => changeAge(e.target.value)}
+      />
       <br></br>
-      <input type="text" placeholder="email" value={profile.email} />
+      <input
+        type="text"
+        placeholder="email"
+        value={profile.email}
+        onChange={(e) => changeEmail(e.target.value)}
+      />
       <br></br>
       <h3>Profile Info</h3>
       <h4>Name: {profile.name}</h4>
