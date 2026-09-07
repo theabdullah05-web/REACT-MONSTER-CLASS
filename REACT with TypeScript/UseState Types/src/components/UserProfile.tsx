@@ -11,14 +11,28 @@ const UserProfile = () => {
     age: "",
     email: "",
   });
+  let newName = "";
+  let newAge = "";
+  let newEmail = "";
   const changeName = (name: string) => {
     setProfile((preVal) => ({ ...preVal, name }));
+    newName = name;
   };
   const changeAge = (age: string) => {
     setProfile((preVal) => ({ ...preVal, age }));
+    newAge = age;
   };
   const changeEmail = (email: string) => {
     setProfile((preVal) => ({ ...preVal, email }));
+    newEmail = email;
+  };
+  const submitInfo = () => {
+    setProfile((preVal) => ({
+      ...preVal,
+      name: newName,
+      age: newAge,
+      email: newEmail,
+    }));
   };
   return (
     <>
