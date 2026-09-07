@@ -11,7 +11,13 @@ const Form = () => {
     email: "",
     password: "",
   });
-  return <form></form>;
+  return (
+    <form>
+      <input />
+      <input />
+      <input />
+    </form>
+  );
 };
 
 export default Form;
