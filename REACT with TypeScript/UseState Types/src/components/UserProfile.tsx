@@ -11,28 +11,14 @@ const UserProfile = () => {
     age: "",
     email: "",
   });
-  let newName = "";
-  let newAge = "";
-  let newEmail = "";
   const changeName = (name: string) => {
     setProfile((preVal) => ({ ...preVal, name }));
-    newName = name;
   };
   const changeAge = (age: string) => {
     setProfile((preVal) => ({ ...preVal, age }));
-    newAge = age;
   };
   const changeEmail = (email: string) => {
     setProfile((preVal) => ({ ...preVal, email }));
-    newEmail = email;
-  };
-  const submitInfo = () => {
-    setProfile((preVal) => ({
-      ...preVal,
-      name: newName,
-      age: newAge,
-      email: newEmail,
-    }));
   };
   return (
     <>
@@ -61,7 +47,6 @@ const UserProfile = () => {
       {profile.name !== "" && <h4>Name: {profile.name}</h4>}
       {profile.age !== "" && <h4>Age: {profile.age}</h4>}
       {profile.email !== "" && <h4>Email: {profile.email}</h4>}
-      <button onClick={submitInfo}>Submit</button>
     </>
   );
 };
