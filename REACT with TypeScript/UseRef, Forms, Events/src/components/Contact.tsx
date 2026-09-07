@@ -14,7 +14,7 @@ const Contact = () => {
   const name = useRef<HTMLInputElement>(null);
   const email = useRef<HTMLInputElement>(null);
   const phone = useRef<HTMLInputElement>(null);
-  const handleSubmit = (event: FormEvent<FormDataEvent>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setForm((preVal) => ({
       ...preVal,
