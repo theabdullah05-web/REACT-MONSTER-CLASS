@@ -1,7 +1,11 @@
 const Contact = () => {
   return (
     <>
-      <form></form>
+      <form>
+        <input />
+        <input />
+        <input />
+      </form>
     </>
   );
 };
