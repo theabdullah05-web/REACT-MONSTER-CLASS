@@ -9,7 +9,6 @@ export const App = () => {
       <br></br>
       <br></br>
       <UserProfile />
-  >
       <br></br>
       <TodoList />
     </>
