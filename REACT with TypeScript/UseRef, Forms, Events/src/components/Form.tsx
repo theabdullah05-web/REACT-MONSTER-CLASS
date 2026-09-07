@@ -13,9 +13,9 @@ const Form = () => {
   });
   return (
     <form>
-      <input />
-      <input />
-      <input />
+      <input value={form.name} />
+      <input value={form.email} />
+      <input value={form.password} />
     </form>
   );
 };
