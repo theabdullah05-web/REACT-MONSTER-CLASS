@@ -9,7 +9,7 @@ export const App = () => {
       <br></br>
       <br></br>
       <UserProfile />
-      <br></br>
+  >
       <br></br>
       <TodoList />
     </>
