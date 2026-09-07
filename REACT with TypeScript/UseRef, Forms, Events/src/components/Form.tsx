@@ -16,7 +16,7 @@ const Form = () => {
   const password = useRef<HTMLInputElement>(null);
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input type="text" placeholder="enter name" ref={name} />
         <input type="email" placeholder="enter email" ref={email} />
         <input type="password" placeholder="enter password" ref={password} />
