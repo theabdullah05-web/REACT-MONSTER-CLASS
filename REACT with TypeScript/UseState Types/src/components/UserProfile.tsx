@@ -14,8 +14,11 @@ const UserProfile = () => {
   return (
     <>
       <input type="text" />
+      <br></br>
       <input type="text" />
+      <br></br>
       <input type="text" />
+      <br></br>
       <h3>Profile Info</h3>
       <h4>Name: {profile.name}</h4>
       <h4>Age: {profile.age}</h4>
