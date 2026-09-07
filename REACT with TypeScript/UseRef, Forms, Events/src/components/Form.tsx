@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type FormEvent } from "react";
 
 const Form = () => {
   type formData = {
@@ -14,6 +14,15 @@ const Form = () => {
   const name = useRef<HTMLInputElement>(null);
   const email = useRef<HTMLInputElement>(null);
   const password = useRef<HTMLInputElement>(null);
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setForm((preVal) => ({
+      ...preVal,
+      name: name.current!.value,
+      email: email.current!.value,
+      password: password.current!.value,
+    }));
+  };
   return (
     <>
       <form onSubmit={handleSubmit}>
