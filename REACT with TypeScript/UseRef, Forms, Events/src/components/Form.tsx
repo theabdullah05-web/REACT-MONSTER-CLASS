@@ -16,6 +16,7 @@ const Form = () => {
       <input type="text" placeholder="enter name" />
       <input type="email" placeholder="enter email" />
       <input type="password" placeholder="enter password" />
+      <button>Submit</button>
     </form>
   );
 };
