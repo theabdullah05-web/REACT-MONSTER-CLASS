@@ -13,9 +13,9 @@ const Form = () => {
   });
   return (
     <form>
-      <input value={form.name} />
-      <input value={form.email} />
-      <input value={form.password} />
+      <input type="text" placeholder="enter name" />
+      <input type="email" placeholder="enter email" />
+      <input type="password" placeholder="enter password" />
     </form>
   );
 };
