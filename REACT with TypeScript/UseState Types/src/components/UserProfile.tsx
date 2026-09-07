@@ -14,9 +14,9 @@ const UserProfile = () => {
   return (
     <>
       <h3>Profile Info</h3>
-      <p>Name: {profile.name}</p>
-      <p>Age: {profile.age}</p>
-      <p>Email: {profile.email}</p>
+      <h4>Name: {profile.name}</h4>
+      <h4>Age: {profile.age}</h4>
+      <h4>Email: {profile.email}</h4>
     </>
   );
 };
