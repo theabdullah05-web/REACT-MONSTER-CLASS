@@ -59,6 +59,7 @@
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  align-items: center; /* 👈 stops children from stretching to full width */
   box-sizing: border-box;
 }
 
@@ -108,4 +109,60 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+/* Button group wrapper — use this on the div wrapping your buttons */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+/* Buttons */
+button,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* never stretch */
+  max-width: 100%;
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-h);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease;
+}
+
+button:hover,
+.button:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+button:active,
+.button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button:disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
