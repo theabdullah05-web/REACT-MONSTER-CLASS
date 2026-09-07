@@ -12,12 +12,19 @@ const Form = () => {
     password: "",
   });
   return (
-    <form>
-      <input type="text" placeholder="enter name" />
-      <input type="email" placeholder="enter email" />
-      <input type="password" placeholder="enter password" />
-      <button>Submit</button>
-    </form>
+    <>
+      <form>
+        <input type="text" placeholder="enter name" />
+        <input type="email" placeholder="enter email" />
+        <input type="password" placeholder="enter password" />
+        <button>Submit</button>
+      </form>
+      <section>
+        <h1>Name: {form.name}</h1>
+        <h1>Email: {form.email}</h1>
+        <h1>Password: {form.password}</h1>
+      </section>
+    </>
   );
 };
 
