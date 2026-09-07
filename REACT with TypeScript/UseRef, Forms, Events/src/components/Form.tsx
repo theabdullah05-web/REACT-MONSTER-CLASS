@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Form = () => {
   type formData = {
@@ -11,12 +11,15 @@ const Form = () => {
     email: "",
     password: "",
   });
+  const name = useRef<HTMLInputElement>(null);
+  const email = useRef<HTMLInputElement>(null);
+  const password = useRef<HTMLInputElement>(null);
   return (
     <>
       <form>
-        <input type="text" placeholder="enter name" />
-        <input type="email" placeholder="enter email" />
-        <input type="password" placeholder="enter password" />
+        <input type="text" placeholder="enter name" ref={name} />
+        <input type="email" placeholder="enter email" ref={email} />
+        <input type="password" placeholder="enter password" ref={password} />
         <button>Submit</button>
       </form>
       <section>
