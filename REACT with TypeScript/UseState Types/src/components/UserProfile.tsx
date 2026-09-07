@@ -20,6 +20,9 @@ const UserProfile = () => {
   const changeEmail = (email: string) => {
     setProfile((preVal) => ({ ...preVal, email }));
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <input
@@ -44,10 +47,11 @@ const UserProfile = () => {
       />
       <br></br>
       <h3>Profile Info</h3>
-      <form>
+      <form onSubmit={handleSubmit}>
         {profile.name !== "" && <h4>Name: {profile.name}</h4>}
         {profile.age !== "" && <h4>Age: {profile.age}</h4>}
         {profile.email !== "" && <h4>Email: {profile.email}</h4>}
+        <button type="submit">Submit</button>
       </form>
     </>
   );
