@@ -7,9 +7,9 @@ const UserProfile = () => {
     email: string;
   }
   const [profile, setProfile] = useState<profile>({
-    name: "Abdullah",
-    age: 21,
-    email: "something@gmail.com",
+    name: "",
+    age: 0,
+    email: "",
   });
   return (
     <>
