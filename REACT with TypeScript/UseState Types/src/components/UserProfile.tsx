@@ -3,12 +3,12 @@ import { useState } from "react";
 const UserProfile = () => {
   interface profile {
     name: string;
-    age: number;
+    age: string;
     email: string;
   }
   const [profile, setProfile] = useState<profile>({
     name: "",
-    age: 0,
+    age: "",
     email: "",
   });
   return (
