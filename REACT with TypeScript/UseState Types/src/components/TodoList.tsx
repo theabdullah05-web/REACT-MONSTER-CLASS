@@ -22,7 +22,15 @@ const TodoList = () => {
   return (
     <>
       <h3>Todo List</h3>
-      <button>Add Todo</button>
+      <button onClick={addTodo}>Add Todo</button>
+      <ul>
+        {todo.map((el) => (
+          <li key={el.id}>
+            {el.value}
+            {el.isDone === true && <b> Completed</b>}
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
