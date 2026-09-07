@@ -20,7 +20,7 @@ const Contact = () => {
       ...preVal,
       name: name.current!.value,
       email: email.current!.value,
-      phone: phone.current.value,
+      phone: phone.current!.value,
     }));
   };
   return (
