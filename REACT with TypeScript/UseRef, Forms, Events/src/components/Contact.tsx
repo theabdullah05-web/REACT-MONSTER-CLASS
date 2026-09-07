@@ -1,6 +1,16 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Contact = () => {
+  type form = {
+    name: string;
+    email: string;
+    phone: string;
+  };
+  const [form, setForm] = useState<form>({
+    name: "",
+    email: "",
+    phone: "",
+  });
   const name = useRef<HTMLInputElement>(null);
   const email = useRef<HTMLInputElement>(null);
   const phone = useRef<HTMLInputElement>(null);
@@ -12,6 +22,11 @@ const Contact = () => {
         <input type="number" placeholder="enter phone" ref={phone} />
         <button>Submit</button>
       </form>
+      <section>
+        <h1>{form.name}</h1>
+        <h1>{form.email}</h1>
+        <h1>{form.phone}</h1>
+      </section>
     </>
   );
 };
