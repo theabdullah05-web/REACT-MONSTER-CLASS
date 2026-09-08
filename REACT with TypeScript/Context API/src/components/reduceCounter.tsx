@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useActionState, useReducer } from "react";
 
 type state = {
   count: number;
@@ -21,6 +21,8 @@ const reduceCounter = () => {
   return (
     <>
       <h2>{state.count}</h2>
+      <button onClick={() => dispatch({ type: "Increment" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "Decrement" })}>Decrement</button>
     </>
   );
 };
