@@ -1,5 +1,5 @@
 const useContext = () => {
-  return <div>useContext</div>;
+  return <></>;
 };
 
 export default useContext;
