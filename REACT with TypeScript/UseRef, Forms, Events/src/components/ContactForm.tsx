@@ -38,9 +38,9 @@ const ContactForm = () => {
         value={formData.email}
         onChange={handleChange}
       />
+      <br />
+      <br />
       <button>Submit</button>
-      <br />
-      <br />
     </form>
   );
 };
