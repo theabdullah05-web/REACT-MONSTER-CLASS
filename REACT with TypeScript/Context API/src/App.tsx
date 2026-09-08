@@ -1,9 +1,9 @@
-import UseContext from "./components/useContext";
+import Counter from "./components/Counter";
 
 export const App = () => {
   return (
     <>
-      <UseContext />
+      <Counter />
     </>
   );
 };
