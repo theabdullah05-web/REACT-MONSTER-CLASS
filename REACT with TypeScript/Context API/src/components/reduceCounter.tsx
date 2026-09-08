@@ -6,7 +6,7 @@ type state = {
 
 type action = { type: "Increment" } | { type: "Decrement" };
 
-const reduceCounter = () => {
+const ReduceCounter = () => {
   const reducer = (state: state, action: action): state => {
     switch (action.type) {
       case "Increment":
@@ -27,4 +27,4 @@ const reduceCounter = () => {
   );
 };
 
-export default reduceCounter;
+export default ReduceCounter;
