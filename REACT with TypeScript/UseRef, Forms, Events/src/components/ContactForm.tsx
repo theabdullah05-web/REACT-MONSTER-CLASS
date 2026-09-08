@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ChangeEvent, type FormEvent } from "react";
 interface form {
   name: string;
   email: string;
@@ -8,6 +8,9 @@ const ContactForm = () => {
     name: "",
     email: "",
   });
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
   return (
     <form>
       <label htmlFor="name">Name:</label>
