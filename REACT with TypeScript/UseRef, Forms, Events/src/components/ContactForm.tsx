@@ -17,6 +17,7 @@ const ContactForm = () => {
         id="name"
         value={formData.name}
       />
+      <br />
       <label htmlFor="email">Email:</label>
       <input
         placeholder="Enter your email"
