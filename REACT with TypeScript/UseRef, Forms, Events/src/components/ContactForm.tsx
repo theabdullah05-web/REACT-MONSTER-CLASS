@@ -9,12 +9,17 @@ const ContactForm = () => {
     email: "",
   });
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    let theName = e.target.name;
+    let name = e.target.name;
     let value = e.target.value;
-    setFormData((preVal) => ({ ...preVal, [theName]: value }));
+    setFormData((preVal) => ({ ...preVal, [name]: value }));
+  };
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    // setFormData(preVal=>({...pr}))
   };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
       <input
         placeholder="Enter your name"
