@@ -1,7 +1,10 @@
+import { useReducer } from "react";
+
 const reduceCounter = () => {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
   return (
     <>
-      <h2>count</h2>
+      <h2>{state.count}</h2>
     </>
   );
 };
