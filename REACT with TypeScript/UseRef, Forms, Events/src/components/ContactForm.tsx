@@ -17,6 +17,13 @@ const ContactForm = () => {
         id="name"
         value={formData.name}
       />
+      <label htmlFor="email">Email:</label>
+      <input
+        placeholder="Enter your email"
+        name="email"
+        id="email"
+        value={formData.email}
+      />
     </form>
   );
 };
