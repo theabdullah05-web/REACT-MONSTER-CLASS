@@ -16,6 +16,7 @@ const ContactForm = () => {
         name="name"
         id="name"
         value={formData.name}
+        onChange={handleChange}
       />
       <br />
       <br />
@@ -25,6 +26,7 @@ const ContactForm = () => {
         name="email"
         id="email"
         value={formData.email}
+        onChange={handleChange}
       />
     </form>
   );
