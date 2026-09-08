@@ -38,6 +38,7 @@ const ContactForm = () => {
         value={formData.email}
         onChange={handleChange}
       />
+      <button>Submit</button>
     </form>
   );
 };
