@@ -9,7 +9,9 @@ const ContactForm = () => {
     email: "",
   });
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
+    let name = e.target.name;
+    let value = e.target.value;
+    setFormData((preVal) => ({ ...preVal, name: value }));
   };
   return (
     <form>
