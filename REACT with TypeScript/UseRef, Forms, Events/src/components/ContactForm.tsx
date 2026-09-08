@@ -23,29 +23,31 @@ const ContactForm = () => {
     }));
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input
-        placeholder="Enter your name"
-        name="name"
-        id="name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <br />
-      <br />
-      <label htmlFor="email">Email:</label>
-      <input
-        placeholder="Enter your email"
-        name="email"
-        id="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      <br />
-      <br />
-      <button>Submit</button>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name:</label>
+        <input
+          placeholder="Enter your name"
+          name="name"
+          id="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <br />
+        <br />
+        <label htmlFor="email">Email:</label>
+        <input
+          placeholder="Enter your email"
+          name="email"
+          id="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        <br />
+        <br />
+        <button>Submit</button>
+      </form>
+    </>
   );
 };
 
