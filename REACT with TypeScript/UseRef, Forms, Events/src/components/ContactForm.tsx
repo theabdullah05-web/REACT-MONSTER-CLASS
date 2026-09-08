@@ -47,6 +47,10 @@ const ContactForm = () => {
         <br />
         <button>Submit</button>
       </form>
+      <br />
+      <br />
+      <h2>{formData.name}</h2>
+      <h2>{formData.email}</h2>
     </>
   );
 };
