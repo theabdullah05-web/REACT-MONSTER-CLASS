@@ -11,7 +11,7 @@ const ContactForm = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     let theName = e.target.name;
     let value = e.target.value;
-    setFormData((preVal) => ({ ...preVal, theName: value }));
+    setFormData((preVal) => ({ ...preVal, [theName]: value }));
   };
   return (
     <form>
