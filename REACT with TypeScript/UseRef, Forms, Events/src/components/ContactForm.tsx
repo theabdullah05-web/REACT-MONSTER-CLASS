@@ -16,7 +16,11 @@ const ContactForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
-    // setFormData(preVal=>({...pr}))
+    setFormData((preVal) => ({
+      ...preVal,
+      ["name"]: formData.name,
+      ["email"]: formData.email,
+    }));
   };
   return (
     <form onSubmit={handleSubmit}>
