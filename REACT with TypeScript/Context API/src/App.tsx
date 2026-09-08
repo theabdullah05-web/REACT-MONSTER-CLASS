@@ -1,9 +1,9 @@
-import Counter from "./components/Counter";
+import ReduceCounter from "./components/reduceCounter";
 
 export const App = () => {
   return (
     <>
-      <Counter />
+      <ReduceCounter />
     </>
   );
 };
