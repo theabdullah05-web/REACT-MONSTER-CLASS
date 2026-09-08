@@ -6,7 +6,7 @@ interface context {
   decrement: () => void;
 }
 
-export const MyContext = createContext<context>({
+const MyContext = createContext<context>({
   count: 0,
   increment: () => {},
   decrement: () => {},
