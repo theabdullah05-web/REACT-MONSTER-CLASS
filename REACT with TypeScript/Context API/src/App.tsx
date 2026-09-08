@@ -1,3 +1,9 @@
+import UseContext from "./components/useContext";
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <UseContext />
+    </>
+  );
 };
