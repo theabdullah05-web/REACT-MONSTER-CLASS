@@ -8,7 +8,17 @@ const ContactForm = () => {
     name: "",
     email: "",
   });
-  return <div>ContactForm</div>;
+  return (
+    <form>
+      <label htmlFor="name">Name:</label>
+      <input
+        placeholder="Enter your name"
+        name="name"
+        id="name"
+        value={formData.name}
+      />
+    </form>
+  );
 };
 
 export default ContactForm;
