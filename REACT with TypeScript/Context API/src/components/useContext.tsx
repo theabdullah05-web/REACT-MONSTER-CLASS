@@ -1,16 +1,5 @@
-import { createContext, useState, type FC, type ReactNode } from "react";
-
-interface context {
-  count: number;
-  increment: () => void;
-  decrement: () => void;
-}
-
-const MyContext = createContext<context>({
-  count: 0,
-  increment: () => {},
-  decrement: () => {},
-});
+import { useState, type FC, type ReactNode } from "react";
+import { MyContext } from "./MyContext";
 
 interface MyProviderProps {
   children: ReactNode;
