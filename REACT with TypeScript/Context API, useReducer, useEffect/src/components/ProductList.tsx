@@ -20,7 +20,7 @@ const ProductList = () => {
         <li key={el.id}>
           {el.name}
           {el.price}
-          <button onClick={handleClick}>Delete</button>
+          <button onClick={() => handleClick(el.id)}>Delete</button>
         </li>
       ))}
     </ul>
