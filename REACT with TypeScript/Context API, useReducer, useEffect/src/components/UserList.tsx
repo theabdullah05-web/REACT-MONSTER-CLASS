@@ -22,19 +22,19 @@ const UserList = () => {
       <h2>user Details:</h2>
       <table style={{ border: "2px solid black" }}>
         <tr style={{ border: "1px solid black" }}>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Email</th>
-          <th>Phone</th>
+          <th style={{ border: "1px solid black" }}>Id</th>
+          <th style={{ border: "1px solid black" }}>Name</th>
+          <th style={{ border: "1px solid black" }}>Username</th>
+          <th style={{ border: "1px solid black" }}>Email</th>
+          <th style={{ border: "1px solid black" }}>Phone</th>
         </tr>
         {data.map((el) => (
           <tr style={{ border: "1px solid black" }}>
-            <td>{el.id}</td>
-            <td>{el.name}</td>
-            <td>{el.username}</td>
-            <td>{el.email}</td>
-            <td>{el.phone}</td>
+            <td style={{ border: "1px solid black" }}>{el.id}</td>
+            <td style={{ border: "1px solid black" }}>{el.name}</td>
+            <td style={{ border: "1px solid black" }}>{el.username}</td>
+            <td style={{ border: "1px solid black" }}>{el.email}</td>
+            <td style={{ border: "1px solid black" }}>{el.phone}</td>
           </tr>
         ))}
       </table>
