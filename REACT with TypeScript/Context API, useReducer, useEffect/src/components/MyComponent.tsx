@@ -41,9 +41,9 @@ const MyComponent = () => {
           <p>{data.stock}</p>
           <p>{data.brand}</p>
           <p>{data.category}</p>
-          <p>{data.thumbnail}</p>
+          <img src={data.thumbnail} />
           {data.images.map((el) => (
-            <p>{el}</p>
+            <img src={el} />
           ))}
         </>
       ) : (
