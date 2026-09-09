@@ -19,15 +19,25 @@ const MyComponent = () => {
     const fetchData = async () => {
       try {
         const res = await fetch("https://dummyjson.com/product/1");
-        const parsedData = res.json();
-        setData(parsedData);
+        const result = res.json();
+        setData(result);
       } catch (error) {
         console.error("Fetching data error:", error);
       }
     };
     fetchData();
   }, []);
-  return <div>{data ? <></> : <></>}</div>;
+  return <div>{data ? <h2>Product</h2><p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p> : <p>Data not Found</p>}</div>;
 };
 
 export default MyComponent;
