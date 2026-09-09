@@ -21,7 +21,7 @@ const UserList = () => {
     <>
       <h2>user Details:</h2>
       {data.map((el) => (
-        <p>{el}</p>
+        <>{el}</>
       ))}
     </>
   );
