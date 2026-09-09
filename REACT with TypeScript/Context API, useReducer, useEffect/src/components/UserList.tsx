@@ -8,7 +8,7 @@ const UserList = () => {
     email: string;
     phone: string;
   }
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<data | null>(null);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
