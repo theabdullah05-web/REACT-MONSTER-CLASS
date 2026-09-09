@@ -32,17 +32,19 @@ const MyComponent = () => {
       {data ? (
         <>
           <h2>Product</h2>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <p>{data.id}</p>
+          <p>{data.title}</p>
+          <p>{data.description}</p>
+          <p>{data.price}</p>
+          <p>{data.discountPercentage}</p>
+          <p>{data.rating}</p>
+          <p>{data.stock}</p>
+          <p>{data.brand}</p>
+          <p>{data.category}</p>
+          <p>{data.thumbnail}</p>
+          {data.images.map((el) => (
+            <p>{el}</p>
+          ))}
         </>
       ) : (
         <p>Data not Found</p>
