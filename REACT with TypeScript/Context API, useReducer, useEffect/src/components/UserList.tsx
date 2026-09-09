@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 
 const UserList = () => {
-  interface data {
+  type data ={
     id: number;
     name: string;
     username: string;
     email: string;
     phone: string;
-  }
-  const [data, setData] = useState<data[] | []>([]);
+  }[]
+  const [data, setData] = useState<data | []>([]);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const result = await res.json();
-      setData(result);
+      setData()
+      }
     };
     fetchData();
   }, []);
