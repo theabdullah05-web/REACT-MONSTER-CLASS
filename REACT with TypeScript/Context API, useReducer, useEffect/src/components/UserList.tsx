@@ -13,11 +13,16 @@ const UserList = () => {
     const fetchData = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const result = await res.json();
+      console.log(res);
       setData(result);
     };
     fetchData();
   }, []);
-  return <div>UserList</div>;
+  return (
+    <>
+      <h2>user Details:</h2>
+    </>
+  );
 };
 
 export default UserList;
