@@ -20,7 +20,7 @@ const UserList = () => {
   return (
     <>
       <h2>user Details:</h2>
-      <table>
+      <table style={{ border: "2px solid black" }}>
         <tr>
           <th>Id</th>
           <th>Name</th>
