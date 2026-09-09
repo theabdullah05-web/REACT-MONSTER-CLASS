@@ -20,7 +20,9 @@ const UserList = () => {
   }, []);
   return (
     <>
-      <h2>user Details:</h2>
+      <h2>
+        user Details:<>{data}</>
+      </h2>
     </>
   );
 };
