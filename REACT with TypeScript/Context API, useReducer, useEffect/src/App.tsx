@@ -1,9 +1,9 @@
-import MyComponent from "./components/MyComponent";
+import UserList from "./components/UserList";
 
 export const App = () => {
   return (
     <>
-      <MyComponent />
+      <UserList />
     </>
   );
 };
