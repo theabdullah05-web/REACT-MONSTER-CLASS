@@ -21,7 +21,7 @@ const UserList = () => {
     <>
       <h2>user Details:</h2>
       <table style={{ border: "2px solid black" }}>
-        <tr>
+        <tr style={{ border: "1px solid black" }}>
           <th>Id</th>
           <th>Name</th>
           <th>Username</th>
@@ -29,7 +29,7 @@ const UserList = () => {
           <th>Phone</th>
         </tr>
         {data.map((el) => (
-          <tr>
+          <tr style={{ border: "1px solid black" }}>
             <td>{el.id}</td>
             <td>{el.name}</td>
             <td>{el.username}</td>
