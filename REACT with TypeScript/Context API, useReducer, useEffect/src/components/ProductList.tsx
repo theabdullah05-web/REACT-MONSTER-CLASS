@@ -11,13 +11,16 @@ const ProductList = () => {
     { id: 2, name: "Mubasher", price: 1977 },
     { id: 3, name: "Hussain", price: 2024 },
   ]);
+  const handleClick = (id: number) => {
+    setState(state.filter((el) => el.id !== id));
+  };
   return (
     <ul>
       {state.map((el) => (
         <li key={el.id}>
           {el.name}
           {el.price}
-          <button></button>
+          <button onClick={handleClick}>Delete</button>
         </li>
       ))}
     </ul>
