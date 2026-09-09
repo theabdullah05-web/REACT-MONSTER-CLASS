@@ -20,9 +20,24 @@ const UserList = () => {
   return (
     <>
       <h2>user Details:</h2>
-      {data.map((el) => (
-        <>{el}</>
-      ))}
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        {data.map((el) => (
+          <tr>
+            <td>{el.id}</td>
+            <td>{el.name}</td>
+            <td>{el.username}</td>
+            <td>{el.email}</td>
+            <td>{el.phone}</td>
+          </tr>
+        ))}
+      </table>
     </>
   );
 };
