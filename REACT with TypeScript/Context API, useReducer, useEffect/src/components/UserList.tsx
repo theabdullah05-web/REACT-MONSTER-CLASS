@@ -1,0 +1,23 @@
+import { useEffect, useState } from "react";
+
+const UserList = () => {
+  interface data {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    phone: string;
+  }
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("https://jsonplaceholder.typicode.com/users");
+      const result = await res.json();
+      setData(result);
+    };
+    fetchData();
+  }, []);
+  return <div>UserList</div>;
+};
+
+export default UserList;
