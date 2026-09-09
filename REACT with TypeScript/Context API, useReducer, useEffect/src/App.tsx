@@ -1,9 +1,9 @@
-import UserList from "./components/UserList";
+import ProductList from "./components/ProductList";
 
 export const App = () => {
   return (
     <>
-      <UserList />
+      <ProductList />
     </>
   );
 };
