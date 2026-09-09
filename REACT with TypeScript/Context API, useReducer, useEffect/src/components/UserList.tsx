@@ -26,8 +26,7 @@ const UserList = () => {
   email:string
 
   },
-
-  onDelete()}
+}
 
 
 
