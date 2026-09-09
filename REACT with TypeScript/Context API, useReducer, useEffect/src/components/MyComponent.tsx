@@ -19,7 +19,7 @@ const MyComponent = () => {
     const fetchData = async () => {
       try {
         const res = await fetch("https://dummyjson.com/product/1");
-        const result = res.json();
+        const result = await res.json();
         setData(result);
       } catch (error) {
         console.error("Fetching data error:", error);
