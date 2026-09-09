@@ -27,17 +27,28 @@ const MyComponent = () => {
     };
     fetchData();
   }, []);
-  return <div>{data ? <h2>Product</h2><p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p> : <p>Data not Found</p>}</div>;
+  return (
+    <div>
+      {data ? (
+        <>
+          <h2>Product</h2>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </>
+      ) : (
+        <p>Data not Found</p>
+      )}
+    </div>
+  );
 };
 
 export default MyComponent;
