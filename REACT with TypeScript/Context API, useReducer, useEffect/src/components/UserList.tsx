@@ -13,7 +13,7 @@ const UserList = () => {
     const fetchData = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const result = await res.json();
-      console.log(res);
+      console.log(result);
       setData(result);
     };
     fetchData();
