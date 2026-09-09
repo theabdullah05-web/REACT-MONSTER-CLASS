@@ -17,22 +17,6 @@ const UserList = () => {
     };
     fetchData();
   }, []);
-  type UserCard= {user:{
-
-  id:string;
-
-  name:string;
-
-  email:string
-
-  },
-}
-
-
-
-  }
-
-
   return (
     <>
       <h2>user Details:</h2>
