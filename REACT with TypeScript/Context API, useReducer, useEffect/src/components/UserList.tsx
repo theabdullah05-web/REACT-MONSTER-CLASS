@@ -1,19 +1,29 @@
 import { useEffect, useState } from "react";
 
 const UserList = () => {
-  type data ={
+  type data = {
     id: number;
     name: string;
     username: string;
     email: string;
     phone: string;
-  }[]
-  const [data, setData] = useState<data | []>([]);
+  };
+  const [data, setData] = useState<data[]>([]);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const result = await res.json();
-      setData()
+      for (user of result) {
+        setData((preVal) => [
+          ...preVal,
+          {
+            id: 1,
+            name: "string",
+            username: "string",
+            email: "string",
+            phone: "string",
+          },
+        ]);
       }
     };
     fetchData();
