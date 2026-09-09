@@ -15,16 +15,16 @@ const MyComponent = () => {
     images: string[];
   };
   const [data, setData] = useState<data | null>(null);
+  const fetchData = async () => {
+    try {
+      const res = await fetch("https://dummyjson.com/product/1");
+      const result = await res.json();
+      setData(result);
+    } catch (error) {
+      console.error("Fetching data error:", error);
+    }
+  };
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("https://dummyjson.com/product/1");
-        const result = await res.json();
-        setData(result);
-      } catch (error) {
-        console.error("Fetching data error:", error);
-      }
-    };
     fetchData();
   }, []);
   return (
@@ -41,10 +41,7 @@ const MyComponent = () => {
           <p>{data.stock}</p>
           <p>{data.brand}</p>
           <p>{data.category}</p>
-          <img src={data.thumbnail} />
-          {data.images.map((el) => (
-            <img src={el} />
-          ))}
+          <button onClick={fet}>Generate New</button>
         </>
       ) : (
         <p>Data not Found</p>
