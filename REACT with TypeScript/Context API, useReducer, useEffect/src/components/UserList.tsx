@@ -17,17 +17,17 @@ const UserList = () => {
     };
     fetchData();
   }, []);
-  type UserCard= user:{
+  type UserCard= {user:{
 
-id:string;
+  id:string;
 
-name:string;
+  name:string;
 
-email:string
+  email:string
 
-},
+  },
 
-onDelete()(id:number){
+  onDelete()}
 
 
 
