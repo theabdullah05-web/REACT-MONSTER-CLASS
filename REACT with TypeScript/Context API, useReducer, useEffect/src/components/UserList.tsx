@@ -21,20 +21,50 @@ const UserList = () => {
     <>
       <h2>user Details:</h2>
       <table style={{ border: "2px solid black" }}>
-        <tr style={{ border: "1px solid black" }}>
-          <th style={{ border: "1px solid black" }}>Id</th>
-          <th style={{ border: "1px solid black" }}>Name</th>
-          <th style={{ border: "1px solid black" }}>Username</th>
-          <th style={{ border: "1px solid black" }}>Email</th>
-          <th style={{ border: "1px solid black" }}>Phone</th>
+        <tr style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+          <th style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            Id
+          </th>
+          <th style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            Name
+          </th>
+          <th style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            Username
+          </th>
+          <th style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            Email
+          </th>
+          <th style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            Phone
+          </th>
         </tr>
         {data.map((el) => (
-          <tr style={{ border: "1px solid black" }}>
-            <td style={{ border: "1px solid black" }}>{el.id}</td>
-            <td style={{ border: "1px solid black" }}>{el.name}</td>
-            <td style={{ border: "1px solid black" }}>{el.username}</td>
-            <td style={{ border: "1px solid black" }}>{el.email}</td>
-            <td style={{ border: "1px solid black" }}>{el.phone}</td>
+          <tr style={{ border: "1px solid black", borderCollapse: "collapse" }}>
+            <td
+              style={{ border: "1px solid black", borderCollapse: "collapse" }}
+            >
+              {el.id}
+            </td>
+            <td
+              style={{ border: "1px solid black", borderCollapse: "collapse" }}
+            >
+              {el.name}
+            </td>
+            <td
+              style={{ border: "1px solid black", borderCollapse: "collapse" }}
+            >
+              {el.username}
+            </td>
+            <td
+              style={{ border: "1px solid black", borderCollapse: "collapse" }}
+            >
+              {el.email}
+            </td>
+            <td
+              style={{ border: "1px solid black", borderCollapse: "collapse" }}
+            >
+              {el.phone}
+            </td>
           </tr>
         ))}
       </table>
