@@ -25,6 +25,15 @@ const MyComponent = () => {
     }
   };
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("https://dummyjson.com/product/1");
+        const result = await res.json();
+        setData(result);
+      } catch (error) {
+        console.error("Fetching data error:", error);
+      }
+    };
     fetchData();
   }, []);
   return (
@@ -41,7 +50,7 @@ const MyComponent = () => {
           <p>{data.stock}</p>
           <p>{data.brand}</p>
           <p>{data.category}</p>
-          <button onClick={fet}>Generate New</button>
+          <button onClick={fetchData}>Generate New</button>
         </>
       ) : (
         <p>Data not Found</p>
