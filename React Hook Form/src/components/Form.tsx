@@ -36,7 +36,7 @@ const Form = () => {
       <input
         id="password"
         {...register("password", {
-          required: true,
+          required: "Password is required",
           minLength: {
             value: 8,
             message: "password must be at least 8 characters",
