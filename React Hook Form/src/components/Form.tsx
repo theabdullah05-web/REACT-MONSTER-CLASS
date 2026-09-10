@@ -17,10 +17,10 @@ const Form = () => {
       <label htmlFor="name">Name: </label>
       <input
         id="name"
-        {...register("name", { required: "Name field is required" })}
+        {...register("name", { required: "name field is required" })}
       />
       <button>Submit</button>
-      {errors.name && <p>{errors.name.message}</p>}
+      {errors.name && <p style={{ color: "red" }}>{errors.name.message}</p>}
     </form>
   );
 };
