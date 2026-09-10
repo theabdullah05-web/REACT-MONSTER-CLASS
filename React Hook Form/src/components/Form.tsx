@@ -46,7 +46,7 @@ const Form = () => {
       {errors.password && (
         <p style={{ color: "red" }}>{errors.password.message}</p>
       )}
-      <button>Submit</button>
+      <button disabled={isSubmitting}>Submit</button>
     </form>
   );
 };
