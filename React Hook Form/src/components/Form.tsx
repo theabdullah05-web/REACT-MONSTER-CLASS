@@ -12,7 +12,16 @@ const Form = () => {
     formState: { errors, isSubmitting },
   } = useForm<formData>();
   const onSubmit: SubmitHandler<formData> = (data) => console.log(data);
-  return <form onSubmit={handleSubmit(onSubmit)}></form>;
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label htmlFor="name">Name: </label>
+      <input
+        id="name"
+        {...register("name", { required: "Name field is required" })}
+      />
+      {errors.name && <p>{errors.name.message}</p>}
+    </form>
+  );
 };
 
 export default Form;
