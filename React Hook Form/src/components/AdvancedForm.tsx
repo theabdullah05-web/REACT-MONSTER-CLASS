@@ -1,6 +1,6 @@
 import "../style.css";
 const AdvancedForm = () => {
-  return <div>AdvancedForm</div>;
+  return <div className="form-container"></div>;
 };
 
 export default AdvancedForm;
