@@ -32,6 +32,7 @@ const Form = () => {
           },
         })}
       />
+      {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
     </form>
   );
 };
