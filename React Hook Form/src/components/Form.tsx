@@ -19,7 +19,6 @@ const Form = () => {
         id="name"
         {...register("name", { required: "name field is required" })}
       />
-      <button>Submit</button>
       {errors.name && <p style={{ color: "red" }}>{errors.name.message}</p>}
       <label htmlFor="email">Email:</label>
       <input
@@ -33,6 +32,7 @@ const Form = () => {
         })}
       />
       {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
+      <button>Submit</button>
     </form>
   );
 };
