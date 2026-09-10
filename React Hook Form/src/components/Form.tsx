@@ -11,7 +11,7 @@ const Form = () => {
     handleSubmit,
     watch,
     formState: { errors, isSubmitting },
-  } = useForm();
+  } = useForm<formData>();
   return <div>Form</div>;
 };
 
