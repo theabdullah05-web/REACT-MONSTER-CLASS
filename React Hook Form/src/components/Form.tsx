@@ -21,6 +21,14 @@ const Form = () => {
       />
       <button>Submit</button>
       {errors.name && <p style={{ color: "red" }}>{errors.name.message}</p>}
+      <label htmlFor="email">Email:</label>
+      <input
+        id="email"
+        {...register("email", {
+          required: "email is required",
+          pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
+        })}
+      />
     </form>
   );
 };
