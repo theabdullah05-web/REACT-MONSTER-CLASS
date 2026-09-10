@@ -28,6 +28,14 @@ const AdvancedForm = () => {
           />
           {errors.firstName && <p>{errors.firstName.message}</p>}
         </div>
+        <div>
+          <label htmlFor="lastName">Last Name: </label>
+          <input
+            id="lastName"
+            {...register("lastName", { required: "last name is required" })}
+          />
+          {errors.lastName && <p>{errors.lastName.message}</p>}
+        </div>
       </form>
     </div>
   );
