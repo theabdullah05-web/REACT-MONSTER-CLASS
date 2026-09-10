@@ -22,7 +22,11 @@ const AdvancedForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label htmlFor="firstName">First Name: </label>
-          <input />
+          <input
+            id="firstName"
+            {...register("firstName", { required: "first name is required" })}
+          />
+          {errors.firstName && <p>{errors.firstName.message}</p>}
         </div>
       </form>
     </div>
