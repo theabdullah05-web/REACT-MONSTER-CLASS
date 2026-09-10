@@ -93,6 +93,7 @@ const AdvancedForm = () => {
           />
           {errors.completeLocation && <p>{errors.completeLocation.message}</p>}
         </div>
+        <button>Submit</button>
       </form>
     </div>
   );
