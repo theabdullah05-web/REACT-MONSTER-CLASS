@@ -32,6 +32,11 @@ const Form = () => {
         })}
       />
       {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
+      <label htmlFor="password">Password: </label>
+      <input id="password" {...register("password",{
+        minLength:8,
+        message:
+      })}/>
       <button>Submit</button>
     </form>
   );
