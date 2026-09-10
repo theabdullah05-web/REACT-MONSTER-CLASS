@@ -33,10 +33,15 @@ const Form = () => {
       />
       {errors.email && <p style={{ color: "red" }}>{errors.email.message}</p>}
       <label htmlFor="password">Password: </label>
-      <input id="password" {...register("password",{
-        minLength:8,
-        message:
-      })}/>
+      <input
+        id="password"
+        {...register("password", {
+          minLength: {
+            value: 8,
+            message: "Password must be at least 8 characters",
+          },
+        })}
+      />
       <button>Submit</button>
     </form>
   );
