@@ -26,10 +26,10 @@ const Form = () => {
         id="email"
         {...register("email", {
           required: "email is required",
-           pattern: {
-             value: /^[^\s@]+@[^\s@s]+\.[^\s@]+$/,
-             message: "Please enter a valid email address",
-           },
+          pattern: {
+            value: /^[^\s@]+@[^\s@s]+\.[^\s@]+$/,
+            message: "Please enter a valid email address",
+          },
         })}
       />
     </form>
