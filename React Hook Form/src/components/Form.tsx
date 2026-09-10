@@ -9,7 +9,6 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors, isSubmitting },
   } = useForm<formData>();
   return <div>Form</div>;
