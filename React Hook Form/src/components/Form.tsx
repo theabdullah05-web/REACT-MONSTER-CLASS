@@ -19,6 +19,7 @@ const Form = () => {
         id="name"
         {...register("name", { required: "Name field is required" })}
       />
+      <button>Submit</button>
       {errors.name && <p>{errors.name.message}</p>}
     </form>
   );
