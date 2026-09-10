@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import "../style.css";
 const AdvancedForm = () => {
-  constconst {
+  const {
     register,
     handleSubmit,
     formState: { errors },
-  }=useForm()
+  } = useForm();
   return (
     <div className="form-container">
       <form>
