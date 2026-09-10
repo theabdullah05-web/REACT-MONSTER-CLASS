@@ -32,9 +32,23 @@ const AdvancedForm = () => {
           <label htmlFor="lastName">Last Name: </label>
           <input
             id="lastName"
-            {...register("lastName", { required: "last name is required" })}
+            {...register("lastName", {
+              required: "last name is required",
+              pattern: {
+                value: /^[^\s@]+@[^\s@s]+\.[^\s@]+$/,
+                message: "Please enter a valid email address",
+              },
+            })}
           />
           {errors.lastName && <p>{errors.lastName.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="firstName">First Name: </label>
+          <input
+            id="firstName"
+            {...register("firstName", { required: "first name is required" })}
+          />
+          {errors.firstName && <p>{errors.firstName.message}</p>}
         </div>
       </form>
     </div>
