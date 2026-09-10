@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { useForm, type SubmitHandler } from "react-hook-form";
 import "../style.css";
 const AdvancedForm = () => {
   interface FormData {
@@ -15,12 +15,14 @@ const AdvancedForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<FormData>();
+  const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
     <div className="form-container">
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label></label>
+          <label htmlFor="firstName">First Name: </label>
+          <input />
         </div>
       </form>
     </div>
