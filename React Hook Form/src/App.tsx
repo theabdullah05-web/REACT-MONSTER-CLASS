@@ -1,5 +1,10 @@
+import Form from "./components/Form";
+
 const App = () => {
-  return <div>App</div>;
+  return;
+  <>
+    <Form />
+  </>;
 };
 
 export default App;
