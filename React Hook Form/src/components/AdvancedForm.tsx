@@ -37,18 +37,50 @@ const AdvancedForm = () => {
           {errors.lastName && <p>{errors.lastName.message}</p>}
         </div>
         <div>
-          <label htmlFor="firstName">First Name: </label>
+          <label htmlFor="email">Email: </label>
           <input
-            id="firstName"
-            {...register("firstName", {
-              required: "first name is required",
+            id="email"
+            {...register("email", {
+              required: "email is required",
               pattern: {
                 value: /^[^\s@]+@[^\s@s]+\.[^\s@]+$/,
                 message: "Please enter a valid email address",
               },
             })}
           />
-          {errors.firstName && <p>{errors.firstName.message}</p>}
+          {errors.email && <p>{errors.email.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="city">City: </label>
+          <input
+            id="city"
+            {...register("city", { required: "City is required" })}
+          />
+          {errors.city && <p>{errors.city.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="state">State: </label>
+          <input
+            id="state"
+            {...register("state", { required: "State is required" })}
+          />
+          {errors.state && <p>{errors.state.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="zip">Zip: </label>
+          <input
+            id="zip"
+            {...register("zip", { required: "Zip is required" })}
+          />
+          {errors.zip && <p>{errors.zip.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="country">Country: </label>
+          <input
+            id="country"
+            {...register("country", { required: "Country is required" })}
+          />
+          {errors.country && <p>{errors.country.message}</p>}
         </div>
       </form>
     </div>
