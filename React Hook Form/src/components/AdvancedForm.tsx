@@ -19,6 +19,7 @@ const AdvancedForm = () => {
   const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
     <div className="form-container">
+      <h2>User Information Form</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label htmlFor="firstName">First Name: </label>
