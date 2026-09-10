@@ -38,10 +38,13 @@ const Form = () => {
         {...register("password", {
           minLength: {
             value: 8,
-            message: "Password must be at least 8 characters",
+            message: "password must be at least 8 characters",
           },
         })}
       />
+      {errors.password && (
+        <p style={{ color: "red" }}>{errors.password.message}</p>
+      )}
       <button>Submit</button>
     </form>
   );
