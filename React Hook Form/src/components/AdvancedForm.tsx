@@ -82,6 +82,16 @@ const AdvancedForm = () => {
           />
           {errors.country && <p>{errors.country.message}</p>}
         </div>
+        <div>
+          <label htmlFor="completeLocation">Complete Location: </label>
+          <input
+            id="completeLocation"
+            {...register("completeLocation", {
+              required: "complete location is required",
+            })}
+          />
+          {errors.completeLocation && <p>{errors.completeLocation.message}</p>}
+        </div>
       </form>
     </div>
   );
