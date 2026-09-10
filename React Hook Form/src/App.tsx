@@ -1,10 +1,11 @@
 import Form from "./components/Form";
 
 const App = () => {
-  return;
-  <>
-    <Form />
-  </>;
+  return (
+    <>
+      <Form />
+    </>
+  );
 };
 
 export default App;
